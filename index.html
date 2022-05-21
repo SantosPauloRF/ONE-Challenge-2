@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@200;400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <main>
+
+        <div class="botoes">
+            <div id="btnComecar">Começar a jogar</div>
+            <div id="btnAdicionar">Adicionar nova palavra</div>
+        </div> 
+
+        <div class="areaForcaHidden">
+            <div class="chances5" id="imagemErros">
+                <img class="ganhouHidden" src="imagens/ganhou.png" id="ganhouId">
+            </div>
+                <div class="jogo">
+                    <div class="imputText">
+                        <input class="naoMostraLetra" id="letra0" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra1" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra2" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra3" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra4" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra5" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra6" type="text" maxlength="1" disabled>
+                        <input class="naoMostraLetra" id="letra7" type="text" maxlength="1" disabled>
+                    </div>
+                    <div class="erros">
+                        <input class="letrasErradas" id="letrasErradas" type="text" disabled>
+                    </div>
+                    
+                    <div class="digitar">
+                        <p>Digite uma letra: </p>
+                        <input class="mostraLetra" id="digite" type="text" maxlength="1">
+                    </div>
+                </div>
+            <div class="areaForcaBotoes">
+                <div id="btnNovoJogo">Novo jogo</div>
+                <div id="btnDesistir">Desistir</div>
+            </div>
+        </div>
+
+        <div class="novaPalavraHidden">
+            <div class="areaDigPalavra">
+                <input type="text" maxlength="8" placeholder="Digite sua palavra:" id="digiteSuaPalavra">
+            </div>
+            <div>
+                <p> &#128073 Máx. de 8 letras.</p>
+                <div class="blocoBotoes">
+                    <div class="btnSalvarComecar" id="btnSalvarComecar">Salvar e Começar</div>
+                    <div class="btnCancelar" id="btnCancelar">Cancelar</div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>® Projeto feito por Paulo Faria!</p>
+
+    </footer>
+
+
+
+
+
+
+    <script src="js/app.js"></script>
+    <script src="js/acoesBotoes.js"></script>
+    
+</body>
+</html>

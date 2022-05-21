@@ -1,0 +1,520 @@
+body{
+    background-color: rgb(232, 221, 255);
+    transition: all 500ms;
+}
+
+main{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    
+}
+footer p{
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    /* border: 2px solid black; */
+}
+/* Pagina Inicial */
+
+.botoesHidden{
+    display: none;
+}
+
+.botoes{
+    width: 220px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#btnComecar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(48, 0, 160);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+#btnComecar:active{
+    box-shadow: 2px 2px 2px inset black;
+}
+
+#btnAdicionar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(48, 0, 160);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+#btnAdicionar:active{
+    box-shadow: 2px 2px 2px inset black;
+}
+
+/*Pagina jogo Forca*/
+
+.areaForcaHidden{
+    display: none;
+}
+.areaForca{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: 600px;
+    height: 500px;
+    /* border: 2px solid black; */
+}
+
+.chances5 {
+    background-image: url("imagens/inicio.png");
+    background-size: contain;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px dotted red;  */
+}
+.chances4{
+    background-image: url("imagens/1erro.png");
+    background-size: contain;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px dotted red;  */
+}
+.chances3{
+    background-image: url("imagens/2erro.png");
+    background-size: contain;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px dotted red;  */
+}
+.chances2{
+    background-image: url("imagens/3erro.png");
+    background-size: contain;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px dotted red;  */
+}
+.chances1{
+    background-image: url("imagens/4erro.png");
+    background-size: contain;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px dotted red;  */
+}
+.chances0{
+    background-image: url("imagens/5erro.png");
+    background-size: contain;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    /* border: 2px dotted red;  */
+}
+
+.ganhouMostra{
+    padding-top: 30px;
+    padding-right: 4px;
+    text-align: center;
+    height: 38px;
+
+}
+.ganhouHidden{
+    display: none;
+}
+
+.fim{   
+   object-fit: scale-down;
+}
+
+.jogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px dotted red;  */
+    width: 600px;
+    height: 100px;
+}
+
+.imputText{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    /* border: 2px solid rgb(0, 255, 21);  */
+}
+.mostraLetra{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 6px;
+    width: 50px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid black;
+    border-radius: 2px;
+    background: none;
+    outline: none;
+}
+
+.naoMostraLetra{
+    display: none;
+}
+.erros{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#letrasErradas{
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.digitar{
+    font-size: 25px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    width: 600px;
+    /* border: 2px solid rgb(0, 255, 21);  */
+}
+.digitar p{
+    margin-right: 5px;
+}
+.erros{
+    width: 600px;
+    /* border: 2px solid rgb(0, 255, 21);  */
+}
+
+
+
+.areaForcaBotoes{
+    /* border: 2px dotted red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#btnNovoJogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(48, 0, 160);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+#btnNovoJogo:active{
+    box-shadow: 2px 2px 2px inset black;
+}
+
+#btnDesistir{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(48, 0, 160);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+#btnDesistir:active{
+    box-shadow: 2px 2px 2px inset black;
+}
+
+/* Pagina add nova palavra*/
+
+.novaPalavraHidden{
+    display: none;
+}
+
+.novaPalavra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 500px;
+    /* border: 2px solid black; */
+}
+
+.areaDigPalavra{
+    /* border: 2px dotted rgb(189, 0, 0); */
+    width: 600px;
+    height: 400px;
+}
+
+#digiteSuaPalavra{
+    color: rgb(48, 0, 160);
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    outline: none;
+    
+}
+#digiteSuaPalavra::placeholder{
+    color: rgb(125, 108, 163);
+    
+}
+
+
+
+.novaPalavra p{
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    padding-left: 50px;
+    align-content: flex-end;
+    /* border: 2px dotted rgb(192, 224, 9); */
+}
+
+.blocoBotoes{
+    /* border: 2px dotted rgb(4, 182, 4); */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#btnSalvarComecar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(48, 0, 160);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+#btnSalvarComecar:active{
+    box-shadow: 2px 2px 2px inset black;
+}
+
+#btnCancelar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(48, 0, 160);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px black;
+    cursor: pointer;
+}
+
+#btnCancelar:active{
+    box-shadow: 2px 2px 2px inset black;
+}
+@media screen and (max-width: 770px) {
+    body{
+        background-color: rgb(221, 239, 255);
+        transition: all 500ms;
+    }
+
+
+}    
+
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: rgb(221, 255, 231);
+        transition: all 500ms;
+    }
+    .areaForca{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        width: 400px;
+        height: 500px;
+        /* border: 2px solid black; */
+    }
+    .chances5 {
+        background-image: url("imagens/inicio.png");
+        background-size: contain;
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        /* border: 2px dotted red;  */
+    }
+    .chances4{
+        background-image: url("imagens/1erro.png");
+        background-size: contain;
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        /* border: 2px dotted red;  */
+    }
+    .chances3{
+        background-image: url("imagens/2erro.png");
+        background-size: contain;
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        /* border: 2px dotted red;  */
+    }
+    .chances2{
+        background-image: url("imagens/3erro.png");
+        background-size: contain;
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        /* border: 2px dotted red;  */
+    }
+    .chances1{
+        background-image: url("imagens/4erro.png");
+        background-size: contain;
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        /* border: 2px dotted red;  */
+    }
+    .chances0{
+        background-image: url("imagens/5erro.png");
+        background-size: contain;
+        margin-left: 50px;
+        width: 300px;
+        height: 300px;
+        /* border: 2px dotted red;  */
+    }
+    .imputText{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        /* border: 2px solid rgb(0, 255, 21);  */
+    }
+    .digitar{
+        font-size: 25px;
+        display: flex;
+        align-items:flex-end;
+        justify-content: center;
+        width: 300px;
+        /* border: 2px solid rgb(0, 255, 21);  */
+    }
+    .mostraLetra{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 6px;
+        width: 40px;
+        height: 30px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-radius: 2px;
+        background: none;
+        outline: none;
+    }
+    
+    .jogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 2px dotted red;  */
+        width: 100%;
+        height: 100px;
+    }
+    .erros{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        
+    }
+    .novaPalavra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+        height: 500px;
+        /* border: 2px solid black; */
+    }
+    .areaDigPalavra{
+        /* border: 2px dotted rgb(189, 0, 0); */
+        width: 400px;
+        height: 400px;
+    }
+    #digiteSuaPalavra{
+        color: rgb(48, 0, 160);
+        padding-left: 10px;
+        padding-top: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        background: none;
+        border: none;
+        outline: none;
+        
+    }
+    .novaPalavra p{
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        padding-left: 8px;
+        align-content: flex-end;
+        /* border: 2px dotted rgb(192, 224, 9); */
+    }
+    
+}
+
+
+
+
