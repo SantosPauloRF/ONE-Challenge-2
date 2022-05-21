@@ -1,7 +1,6 @@
 var imagem = document.getElementById("imagemErros");
 var novaPalavra = document.getElementById("digiteSuaPalavra");
-//"azul", "navio", "paulista", 
-var palavras = ["carioca", "roque", "luna", "liz", "paulo", "pastel", "esfiha", "fatima"];
+var palavras = ["azul", "navio", "paulista"];
 var palavraAleatoria = palavras[sorteioPalavra()]
 var chances = 5;
 var imagemErro = document.getElementById("imagens");
